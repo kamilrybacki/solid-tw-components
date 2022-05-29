@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
+    "@typescript-eslint/eslint-plugin": "^5.26.0",
     "@typescript-eslint/parser": "^5.26.0",
     "eslint": "^8.16.0",
     "eslint-config-google": "^0.14.0",
