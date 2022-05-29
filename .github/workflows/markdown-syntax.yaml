@@ -1,0 +1,35 @@
+name: Checking Markdown files 
+
+on: [push]
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checking out
+      uses: actions/checkout@v1
+    - name: Using Markdown lint on MD files
+      uses: articulate/actions-markdownlint@v1
+      with:
+        config: markdownlint.json
+        files: '**/*.md'
+        ignore: node_modules
+    - name: Using Markdown lint on MDX files
+      uses: articulate/actions-markdownlint@v1
+      with:
+        config: markdownlint.json
+        files: '**/*.mdx'
+        ignore: node_modules
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out
+        uses: actions/checkout@v1
+      - name: Checking if links in repo Markdown files are up-to-date
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: yes
+      - name: Checking links in MDX files 
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: yes

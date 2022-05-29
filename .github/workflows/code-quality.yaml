@@ -1,0 +1,33 @@
+name: Code linting and typing check + Jest
+
+on: [push]
+
+jobs:
+  typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out
+        uses: actions/checkout@v1
+      - name: NPM install
+        run: npm i
+      - name: Running TypeScript linter
+        uses: icrawl/action-tsc@v1
+  eslint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: install node v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: NPM install
+        run: npm i
+      - name: Running ESLint
+        uses: icrawl/action-eslint@v1
+  jest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: NPM install
+        run: npm i
+      - name: Running Jest 
+        run: npm test
