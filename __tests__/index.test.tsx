@@ -3,7 +3,7 @@ import {BiCompass} from "solid-icons/bi";
 
 import {render} from 'solid-testing-library';
 
-import stw from '../index'; 
+import stw from '../src/index'; 
 
 async function getElementWithIdAfterRender (renderFunction: Function, id: string) {
     await renderFunction()
