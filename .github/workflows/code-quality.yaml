@@ -33,6 +33,6 @@ jobs:
         with:
           node-version: 12
       - name: NPM install
-        run: npm i
+        run: npm i --save-dev
       - name: Running Jest 
         run: npm test
