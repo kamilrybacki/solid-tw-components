@@ -11,7 +11,7 @@ const NewComponent = stw('div')`
     w-screen
     h-screen
     ... and other Tailwind magic
-`
+`;
 
 render(() => {
   return (
@@ -19,6 +19,35 @@ render(() => {
         ... Your cool (and styled) content!
     </NewComponent>
   );
+},
+  document.getElementById('root') as HTMLElement,
+);
+
+```
+
+You can also apply TailwindCSS styles to Your custom component
+or components from external libraries e.g.:
+
+```javascript
+import stw from 'solid-tailwind-components';
+
+const MyHeading = ({children}) => {
+  return(
+    <h1>{children}</h1>
+  )
+};
+
+const MyStyledHeading = stw(MyComponent)`
+  text-2xl
+  font-bold
+`;
+
+render(() => {
+  return(
+    <MyStyledHeading>
+      Yo!
+    </MyStyledHeading>
+  )
 },
   document.getElementById('root') as HTMLElement,
 );
