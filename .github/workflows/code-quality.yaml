@@ -35,4 +35,4 @@ jobs:
       - name: NPM install
         run: npm i --save-dev
       - name: Running Jest 
-        run: npm test
+        run: npx jest
