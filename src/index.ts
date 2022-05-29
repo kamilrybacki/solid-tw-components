@@ -13,16 +13,16 @@ const stw = (base: string | Component<any>) => {
     if(typeof base === 'function') {
       const functionSourceCode = base.toString();
       if (functionSourceCode.includes(SOLIDJSTAG)) {
-        return (props) => h(
+        return (props: object) => h(
           h(base)().tagName.toLowerCase(),
           {...tailwindClassesInjection, ...props}
         );
       }
-      return (props) => {
+      return (props: object) => {
         return h(base, {...tailwindClassesInjection, ...props});
       };
     }
-    return (props) => h(base, {...tailwindClassesInjection, ...props});
+    return (props: object) => h(base, {...tailwindClassesInjection, ...props});
   };
 };
 
