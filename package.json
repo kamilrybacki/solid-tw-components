@@ -1,0 +1,42 @@
+{
+  "name": "solid-tw-components",
+  "version": "1.0.0",
+  "description": "Small library for using styled-components syntax with TailwindCSS classes on SolidJS components",
+  "main": "index.ts",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KamilRybacki/solid-tw-components.git"
+  },
+  "keywords": [
+    "tailwind",
+    "solidjs",
+    "styled"
+  ],
+  "author": "Kamil Rybacki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KamilRybacki/solid-tw-components/issues"
+  },
+  "homepage": "https://github.com/KamilRybacki/solid-tw-components#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.0",
+    "@babel/preset-env": "^7.18.0",
+    "@babel/preset-typescript": "^7.17.12",
+    "@types/jest": "^27.5.1",
+    "babel-jest": "^28.1.0",
+    "babel-preset-solid": "^1.4.2",
+    "jest": "^28.1.0"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "jest-environment-jsdom": "^28.1.0",
+    "solid-icons": "^0.4.11",
+    "solid-jest": "^0.2.0",
+    "solid-js": "^1.4.2",
+    "solid-testing-library": "^0.3.0",
+    "tailwindcss": "^3.0.24"
+  }
+}
