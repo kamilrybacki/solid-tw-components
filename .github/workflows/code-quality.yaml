@@ -27,6 +27,11 @@ jobs:
   jest:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
+      - name: install node v12
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: NPM install
         run: npm i
       - name: Running Jest 
