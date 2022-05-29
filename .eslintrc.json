@@ -4,7 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
+        "plugin:solid/recommended",
         "google"
     ],
     "parser": "@typescript-eslint/parser",
@@ -16,7 +16,7 @@
         "sourceType": "module"
     },
     "plugins": [
-        "react",
+        "solid",
         "@typescript-eslint"
     ],
     "rules": {
