@@ -9,13 +9,13 @@ const stw = (base: string | Component<any>) => {
     const tailwindClassesInjection = {
       'class': tailwindClasses,
       'className': tailwindClasses,
-    }
-    if(typeof base === 'function') {
+    };
+    if (typeof base === 'function') {
       const functionSourceCode = base.toString();
       if (functionSourceCode.includes(SOLIDJSTAG)) {
         return (props: object) => h(
-          h(base)().tagName.toLowerCase(),
-          {...tailwindClassesInjection, ...props}
+            h(base)().tagName.toLowerCase(),
+            {...tailwindClassesInjection, ...props},
         );
       }
       return (props: object) => {
