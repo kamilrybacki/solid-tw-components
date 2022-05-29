@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["ES2017", "dom"],
+    "jsx": "react",
+    "module": "commonjs", 
+    "moduleResolution": "node",
+    "types": ["node"],
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true, 
+  },
+  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+}
