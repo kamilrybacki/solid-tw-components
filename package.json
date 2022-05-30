@@ -5,7 +5,7 @@
   "main": "index.ts",
   "scripts": {
     "test": "jest",
-    "release": "np --no-2fa"
+    "release": "np --no-2fa --any-branch"
   },
   "repository": {
     "type": "git",
