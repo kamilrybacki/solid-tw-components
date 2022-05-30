@@ -36,6 +36,5 @@ jobs:
         run: npm i
       - name: Setup browser for rendering
         uses: browser-actions/setup-chrome@latest
-        run: chrome --version
       - name: Running Jest 
         run: npx jest
