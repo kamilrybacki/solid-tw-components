@@ -3,8 +3,7 @@ module.exports = {
     test: {
       presets: [
         ['@babel/preset-env', {targets: {node: 'current'}}],
-        '@babel/preset-typescript',
-        ['solid', {generate: 'dom', hydratable: true}],
+        '@babel/preset-typescript', 'solid',
       ],
     },
   },
