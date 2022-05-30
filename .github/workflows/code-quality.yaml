@@ -19,7 +19,7 @@ jobs:
       - name: install node v12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
       - name: NPM install
         run: npm i
       - name: Running ESLint
@@ -31,7 +31,7 @@ jobs:
       - name: install node v12
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 14
       - name: NPM install
         run: npm i
       - name: Setup browser for rendering
