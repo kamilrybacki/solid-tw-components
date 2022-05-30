@@ -1,9 +1,10 @@
+/* eslint-disable require-jsdoc */
 import h from 'solid-js/h';
 import {Component} from 'solid-js';
 
 const SOLIDJSTAG = '_web.spread';
 
-const stw = (base: string | Component<any>) => {
+function stw(base: string | Component<any>) {
   return (classesTemplateLiteral: TemplateStringsArray) => {
     const tailwindClasses = getClassesFromLiteral(classesTemplateLiteral.raw[0]);
     const tailwindClassesInjection = {

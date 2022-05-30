@@ -2,7 +2,7 @@
   "name": "solid-tw-components",
   "version": "1.0.2",
   "description": "Small library for using styled-components syntax with TailwindCSS classes on SolidJS components",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "scripts": {
     "test": "jest",
     "release": "np --no-2fa --any-branch"
