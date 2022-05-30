@@ -33,6 +33,9 @@ jobs:
         with:
           node-version: 12
       - name: NPM install
-        run: npm i --save-dev
+        run: npm i
+      - name: Setup browser for rendering
+        uses: browser-actions/setup-chrome@latest
+        run: chrome --version
       - name: Running Jest 
         run: npx jest
